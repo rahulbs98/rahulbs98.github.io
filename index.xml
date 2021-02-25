@@ -29,7 +29,7 @@
     </item>
     
     <item>
-      <title>Zero Knowledge Proofs</title>
+      <title>Non-Interactive Proof Generation from Interactive Zero Knowledge Protocols</title>
       <link>https://rahulbs98.github.io/project/ibm/</link>
       <pubDate>Mon, 04 May 2020 21:29:05 +0530</pubDate>
       <guid>https://rahulbs98.github.io/project/ibm/</guid>
@@ -60,18 +60,10 @@
     </item>
     
     <item>
-      <title>Secure Assisted Universally Blind Quantum Computation</title>
-      <link>https://rahulbs98.github.io/project/qic/</link>
-      <pubDate>Tue, 07 Jan 2020 21:29:21 +0530</pubDate>
-      <guid>https://rahulbs98.github.io/project/qic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Efficient methods for Distributed RSA Modulus generation and testing</title>
-      <link>https://rahulbs98.github.io/project/israel/</link>
+      <title>Distributed RSA Modulus generation and biprimality testing</title>
+      <link>https://rahulbs98.github.io/project/rsa_mod/</link>
       <pubDate>Thu, 01 Aug 2019 21:29:05 +0530</pubDate>
-      <guid>https://rahulbs98.github.io/project/israel/</guid>
+      <guid>https://rahulbs98.github.io/project/rsa_mod/</guid>
       <description></description>
     </item>
     

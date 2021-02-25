@@ -5,20 +5,12 @@
     <link>https://rahulbs98.github.io/tag/study/</link>
       <atom:link href="https://rahulbs98.github.io/tag/study/index.xml" rel="self" type="application/rss+xml" />
     <description>Study</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 07 Jan 2020 21:29:21 +0530</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 15 May 2019 21:28:55 +0530</lastBuildDate>
     <image>
       <url>https://rahulbs98.github.io/media/image1.jpg</url>
       <title>Study</title>
       <link>https://rahulbs98.github.io/tag/study/</link>
     </image>
-    
-    <item>
-      <title>Secure Assisted Universally Blind Quantum Computation</title>
-      <link>https://rahulbs98.github.io/project/qic/</link>
-      <pubDate>Tue, 07 Jan 2020 21:29:21 +0530</pubDate>
-      <guid>https://rahulbs98.github.io/project/qic/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Analysis of existing Beyond Birthday Bound MAC schemes</title>
