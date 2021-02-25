@@ -5,7 +5,7 @@
     <link>https://rahulbs98.github.io/project/</link>
       <atom:link href="https://rahulbs98.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 04 May 2020 21:29:05 +0530</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 18 Jan 2021 21:29:05 +0530</lastBuildDate>
     <image>
       <url>https://rahulbs98.github.io/media/image1.jpg</url>
       <title>Projects</title>
@@ -13,26 +13,18 @@
     </image>
     
     <item>
-      <title>Efficient comparision using homomorphic encryption</title>
-      <link>https://rahulbs98.github.io/project/qedit/</link>
-      <pubDate>Mon, 04 May 2020 21:29:05 +0530</pubDate>
-      <guid>https://rahulbs98.github.io/project/qedit/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Efficient methods for Distributed RSA Modulus generation and testing</title>
-      <link>https://rahulbs98.github.io/project/israel/</link>
-      <pubDate>Mon, 04 May 2020 21:29:05 +0530</pubDate>
-      <guid>https://rahulbs98.github.io/project/israel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Malicious security and 2-sided output for the PSI-Sum with Cardinality problem</title>
       <link>https://rahulbs98.github.io/project/psi_sum/</link>
-      <pubDate>Mon, 04 May 2020 21:29:05 +0530</pubDate>
+      <pubDate>Mon, 18 Jan 2021 21:29:05 +0530</pubDate>
       <guid>https://rahulbs98.github.io/project/psi_sum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Efficient comparision using homomorphic encryption</title>
+      <link>https://rahulbs98.github.io/project/qedit/</link>
+      <pubDate>Mon, 21 Dec 2020 21:29:05 +0530</pubDate>
+      <guid>https://rahulbs98.github.io/project/qedit/</guid>
       <description></description>
     </item>
     
@@ -56,6 +48,14 @@
       <link>https://rahulbs98.github.io/project/qic/</link>
       <pubDate>Tue, 07 Jan 2020 21:29:21 +0530</pubDate>
       <guid>https://rahulbs98.github.io/project/qic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Efficient methods for Distributed RSA Modulus generation and testing</title>
+      <link>https://rahulbs98.github.io/project/israel/</link>
+      <pubDate>Thu, 01 Aug 2019 21:29:05 +0530</pubDate>
+      <guid>https://rahulbs98.github.io/project/israel/</guid>
       <description></description>
     </item>
     
