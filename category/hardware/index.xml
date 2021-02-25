@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hardware | Rahul B S</title>
+    <link>https://rahulbs98.github.io/category/hardware/</link>
+      <atom:link href="https://rahulbs98.github.io/category/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hardware</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 07 Aug 2019 21:29:46 +0530</lastBuildDate>
+    <image>
+      <url>https://rahulbs98.github.io/media/image1.jpg</url>
+      <title>Hardware</title>
+      <link>https://rahulbs98.github.io/category/hardware/</link>
+    </image>
+    
+    <item>
+      <title>Efficient Hardware-based Symmetric Cryptographic Implementations</title>
+      <link>https://rahulbs98.github.io/project/eee/</link>
+      <pubDate>Wed, 07 Aug 2019 21:29:46 +0530</pubDate>
+      <guid>https://rahulbs98.github.io/project/eee/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

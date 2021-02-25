@@ -29,6 +29,16 @@
     </item>
     
     <item>
+      <title>Analysis of existing Beyond Birthday Bound MAC schemes</title>
+      <link>https://rahulbs98.github.io/project/sets/</link>
+      <pubDate>Wed, 15 May 2019 21:28:55 +0530</pubDate>
+      <guid>https://rahulbs98.github.io/project/sets/</guid>
+      <description>&lt;p&gt;• Cryptanalysis techniques on Beyond Birthday-Bound Secure claimed MAC schemes such as EWCDM, etc..&lt;/p&gt;
+&lt;p&gt;• Theoretically and practically analyzed the Encrypted Wegmen-Carter MAC scheme and H-coefficients technique.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Random Graphs &amp; applications in Cryptography</title>
       <link>https://rahulbs98.github.io/project/math/</link>
       <pubDate>Tue, 08 Jan 2019 21:29:52 +0530</pubDate>

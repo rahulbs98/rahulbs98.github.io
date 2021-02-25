@@ -9,7 +9,7 @@
   
   <url>
     <loc>https://rahulbs98.github.io/categories/</loc>
-    <lastmod>2020-05-04T21:29:05+05:30</lastmod>
+    <lastmod>2020-08-24T11:27:40+05:30</lastmod>
   </url>
   
   <url>
@@ -23,8 +23,13 @@
   </url>
   
   <url>
+    <loc>https://rahulbs98.github.io/project/israel/</loc>
+    <lastmod>2020-08-24T11:27:40+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rahulbs98.github.io/category/fhe/</loc>
-    <lastmod>2020-05-04T21:29:05+05:30</lastmod>
+    <lastmod>2020-08-24T11:27:40+05:30</lastmod>
   </url>
   
   <url>
@@ -38,8 +43,8 @@
   </url>
   
   <url>
-    <loc>https://rahulbs98.github.io/author/guide-prof.-carmi-hazay/</loc>
-    <lastmod>2020-05-04T21:29:05+05:30</lastmod>
+    <loc>https://rahulbs98.github.io/author/guide-prof.-carmit-hazay/</loc>
+    <lastmod>2020-08-24T11:27:40+05:30</lastmod>
   </url>
   
   <url>
@@ -49,12 +54,17 @@
   
   <url>
     <loc>https://rahulbs98.github.io/category/mpc/</loc>
-    <lastmod>2020-05-04T21:29:05+05:30</lastmod>
+    <lastmod>2020-08-24T11:27:40+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rahulbs98.github.io/category/pke/</loc>
+    <lastmod>2020-08-24T11:27:40+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://rahulbs98.github.io/author/prof.-muthu-venkitasubhramaniam/</loc>
-    <lastmod>2020-05-04T21:29:05+05:30</lastmod>
+    <lastmod>2020-08-24T11:27:40+05:30</lastmod>
   </url>
   
   <url>
@@ -78,6 +88,11 @@
   </url>
   
   <url>
+    <loc>https://rahulbs98.github.io/tag/research/</loc>
+    <lastmod>2020-08-24T11:27:40+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rahulbs98.github.io/tags/</loc>
     <lastmod>2020-08-24T11:27:40+05:30</lastmod>
   </url>
@@ -93,6 +108,11 @@
   </url>
   
   <url>
+    <loc>https://rahulbs98.github.io/category/zkp/</loc>
+    <lastmod>2020-08-24T11:27:40+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rahulbs98.github.io/talk/israel/</loc>
     <lastmod>2020-09-07T18:39:19+05:30</lastmod>
   </url>
@@ -104,6 +124,11 @@
   
   <url>
     <loc>https://rahulbs98.github.io/author/guide-dr.-radhika-vatsan/</loc>
+    <lastmod>2020-08-24T11:27:40+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rahulbs98.github.io/category/quantum/</loc>
     <lastmod>2020-08-24T11:27:40+05:30</lastmod>
   </url>
   
@@ -128,12 +153,37 @@
   </url>
   
   <url>
+    <loc>https://rahulbs98.github.io/category/hardware/</loc>
+    <lastmod>2020-08-24T11:27:40+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rahulbs98.github.io/project/sets/</loc>
     <lastmod>2020-08-24T11:27:40+05:30</lastmod>
   </url>
   
   <url>
+    <loc>https://rahulbs98.github.io/category/authentication/</loc>
+    <lastmod>2020-08-24T11:27:40+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rahulbs98.github.io/author/guide-prof.-jothi-ramalingam/</loc>
+    <lastmod>2020-08-24T11:27:40+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rahulbs98.github.io/category/graphs/</loc>
+    <lastmod>2020-08-24T11:27:40+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rahulbs98.github.io/author/guide-dr.-tarakeshwar-singh/</loc>
+    <lastmod>2020-08-24T11:27:40+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rahulbs98.github.io/category/hash-functions/</loc>
     <lastmod>2020-08-24T11:27:40+05:30</lastmod>
   </url>
   
