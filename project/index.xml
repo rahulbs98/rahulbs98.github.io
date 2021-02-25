@@ -13,6 +13,22 @@
     </image>
     
     <item>
+      <title>Efficient comparision using homomorphic encryption</title>
+      <link>https://rahulbs98.github.io/project/qedit/</link>
+      <pubDate>Mon, 04 May 2020 21:29:05 +0530</pubDate>
+      <guid>https://rahulbs98.github.io/project/qedit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Malicious security and 2-sided output for the PSI-Sum with Cardinality problem</title>
+      <link>https://rahulbs98.github.io/project/thesis/</link>
+      <pubDate>Mon, 04 May 2020 21:29:05 +0530</pubDate>
+      <guid>https://rahulbs98.github.io/project/thesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Zero Knowledge Proofs</title>
       <link>https://rahulbs98.github.io/project/ibm/</link>
       <pubDate>Mon, 04 May 2020 21:29:05 +0530</pubDate>
@@ -26,16 +42,6 @@
       <pubDate>Tue, 07 Jan 2020 21:29:21 +0530</pubDate>
       <guid>https://rahulbs98.github.io/project/qic/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Efficient RSA shared key generation in a multi-party setting</title>
-      <link>https://rahulbs98.github.io/project/israel/</link>
-      <pubDate>Sun, 15 Dec 2019 21:18:58 +0530</pubDate>
-      <guid>https://rahulbs98.github.io/project/israel/</guid>
-      <description>&lt;p&gt;• Working on coming up with efficient methods of biprimality testing for generation of shared RSA modulus.&lt;/p&gt;
-&lt;p&gt;• Also trying to improve efficiency of existing shared RSA-modulus generation methods such as Boneh Franklin’s test using tools in such as the average case error estimate method as in Damgard et al. for Miller Rabin test.&lt;/p&gt;
-</description>
     </item>
     
     <item>
