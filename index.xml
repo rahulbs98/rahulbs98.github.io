@@ -64,7 +64,9 @@
       <link>https://rahulbs98.github.io/project/rsa_mod/</link>
       <pubDate>Thu, 01 Aug 2019 21:29:05 +0530</pubDate>
       <guid>https://rahulbs98.github.io/project/rsa_mod/</guid>
-      <description></description>
+      <description>&lt;p&gt;&lt;strong&gt;Project Description:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Distributed generation of an RSA Modulus mitigates the requirement of a trusted third party for key generation in an RSA Cryptosystem. It involves generating a number N as a product of two primes, $p$ &amp;amp; $q$.  Using MPC, one can generate these primes in a distributed fashion without a single party having complete knowledge about $p$ or $q$. We can then distributedly multiply these two numbers to get the desired modulus. An essential step in this is to check if the number obtained is a product of two primes. An added security requirement, for practical use cases these days, here is to sample “safe primes,” which means that we need $\frac{p-1}{2}$ and $\frac{q-1}{2}$ also to be primes. We say that this modulus is stronger if the Euler’s totient function $\phi(N)$ does not have smaller factors. In a non-distributed setting, it has been a widely studied problem. However, the need for a distributed check while trying not to reveal the primes makes this problem non-trivial. It will require us to ensure that $(p-1)$ and $(q-1)$ will not have small factors. While this seems to be a trivial task given p and q, we will have to do this check without revealing what these values are. We are looking into possible approaches to perform this check. Even the current solutions for verifying if a given modulus is just a product of two primes can be improved to get better soundness. We are working on improving these schemes’ analysis for amplifying soundness. Our work can significantly improve the concrete efficiency of various cryptographic primitives, overcoming the current roadblock to their deployment and making them scalable for large-scale use.&lt;/p&gt;
+</description>
     </item>
     
     <item>
