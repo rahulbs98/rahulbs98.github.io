@@ -13,9 +13,9 @@ footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: "icon.png" # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://rahulbs98.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -40,7 +40,7 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -77,7 +77,7 @@ scholar_userid: LskQKm0AAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id: 0000-0002-0497-7172 # your ORCID ID
-medium_username: # your Medium username
+medium_username: bsrahul# your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
 lattes_id: # your ID on Lattes (Brazilian Lattes CV)
@@ -90,7 +90,7 @@ keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
 wikipedia_id: # your wikipedia id (Case sensitive)
 dblp_url: # your DBLP profile url
-stackoverflow_id: # your stackoverflow id
+stackoverflow_id: 23554134 # your stackoverflow id
 kaggle_id: # your kaggle id
 lastfm_id: # your lastfm id
 spotify_id: # your spotify id
@@ -138,10 +138,10 @@ related_blog_posts:
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
 giscus:
-  repo: # <your-github-user-name>/<your-github-repo-name>
-  repo_id: # leave empty or specify your repo_id (see https://giscus.app/)
-  category: Comments # name of the category under which discussions will be created
-  category_id: # leave empty or specify your category_id (see https://giscus.app/)
+  repo: rahulbs98/rahulbs98.github.io # <your-github-user-name>/<your-github-repo-name>
+  repo_id: R_kgDOLdA-FQ # leave empty or specify your repo_id (see https://giscus.app/)
+  category: Ideas # name of the category under which discussions will be created
+  category_id: DIC_kwDOLdA-Fc4Cdy3H # leave empty or specify your category_id (see https://giscus.app/)
   mapping: title # identify discussions by post title
   strict: 1 # use strict identification mode
   reactions_enabled: 1 # enable (1) or disable (0) emoji reactions
@@ -151,7 +151,7 @@ giscus:
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname:  # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
@@ -159,7 +159,7 @@ disqus_shortname: al-folio # put your disqus shortname
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
   - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
+    rss_url: https://medium.com/@bsrahul/feed
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -283,8 +283,8 @@ display_categories: ["blockquotes"] # these categories will be displayed on the 
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Satish]
+  first_name: [Rahul]
 
   style: apa
   locale: en
