@@ -63,6 +63,7 @@ serve_og_meta: false # Include Open Graph meta tags in the HTML head
 serve_schema_org: false # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
+# gem "jekyll-minifier", "~> 0.2.2"
 # -----------------------------------------------------------------------------
 # Social integration
 # -----------------------------------------------------------------------------
@@ -72,7 +73,7 @@ gitlab_username: # your GitLab user name
 x_username: rahul__satish # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: rahul-bs # your LinkedIn user name
-telegram_username: beacon1998 # your Telegram user name
+telegram_username:  # your Telegram user name
 scholar_userid: LskQKm0AAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
@@ -231,9 +232,9 @@ plugins:
   - jekyll-feed
   - jekyll-get-json
   - jekyll-imagemagick
-  - jekyll-jupyter-notebook
+  #- jekyll-jupyter-notebook
   - jekyll-link-attributes
-  - jekyll-minifier
+  #- jekyll-minifier
   - jekyll-paginate-v2
   - jekyll/scholar
   - jekyll-sitemap
