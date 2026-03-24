@@ -1,5 +1,21 @@
 [
   {
+    "citationKey": "DBLP:journals/iacr/AcharyaHS26",
+    "entryType": "article",
+    "entryTags": {
+      "author": "Anasuya Acharya and\n                  Carmit Hazay and\n                  Rahul Satish",
+      "title": "The Landscape of Reusable Garbling",
+      "journal": "{IACR} Cryptol. ePrint Arch.",
+      "volume": "2026",
+      "pages": "492",
+      "year": "2026",
+      "url": "https://eprint.iacr.org/2026/492",
+      "timestamp": "Sat, 21 Mar 2026 00:00:00 +0100",
+      "biburl": "https://dblp.org/rec/journals/iacr/AcharyaHS26.bib",
+      "bibsource": "dblp computer science bibliography, https://dblp.org"
+    }
+  },
+  {
     "citationKey": "DBLP:conf/asiacrypt/DavidMS25",
     "entryType": "inproceedings",
     "entryTags": {
@@ -8,7 +24,6 @@
       "title": "Rumors {MPC:} {GOD} for Dynamic Committees, Low Communication via\n                  Constant-Round Chat",
       "booktitle": "Advances in Cryptology - {ASIACRYPT} 2025 - 31st International Conference\n                  on the Theory and Application of Cryptology and Information Security,\n                  Melbourne, VIC, Australia, December 8-12, 2025, Proceedings, Part\n                  {V}",
       "series": "Lecture Notes in Computer Science",
-      "volume": "16249",
       "pages": "102--132",
       "publisher": "Springer",
       "year": "2025",
@@ -26,6 +41,7 @@
       "author": "Bernardo David and\n                  Arup Mondal and\n                  Rahul Satish",
       "title": "Rumors {MPC:} {GOD} for Dynamic Committees, Low Communication via\n                  Constant-Round Chat",
       "journal": "{IACR} Cryptol. ePrint Arch.",
+      "volume": "2025",
       "pages": "1464",
       "year": "2025",
       "url": "https://eprint.iacr.org/2025/1464",
@@ -41,6 +57,7 @@
       "author": "Tomer Ashur and\n                  Carmit Hazay and\n                  Rahul Satish",
       "title": "On the Feasibility of Sliced Garbling",
       "journal": "{IACR} Cryptol. ePrint Arch.",
+      "volume": "2024",
       "pages": "389",
       "year": "2024",
       "url": "https://eprint.iacr.org/2024/389",
