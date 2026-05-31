@@ -27,6 +27,15 @@ npm run pubs    # publications.json from publications.bib
 npm run albums  # albums.json from albums.meta.json + images
 ```
 
+## Profile image focus
+
+- To detect a good focal point for the profile photo, open `tools/detect_profile_face.html` in your browser and copy the `object-position: X% Y%` value.
+- To apply the value to the site automatically, run:
+```bash
+node tools/apply_profile_focus.js "X% Y%"
+```
+- If you prefer automation via Node, `npm run detect-profile-face` will attempt to run a TensorFlow-based detector and patch `index.html` automatically (may need Node 18 on macOS to install native binaries).
+
 ## Deployment (GitHub Pages)
 
 1. Push changes to main.

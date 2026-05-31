@@ -6,6 +6,7 @@
   "scripts": {
     "pubs": "node convertBib.js",
     "albums": "node generateAlbums.js",
+    "detect-profile-face": "node tools/detect_profile_face_tf.js",
     "prestart": "npm run pubs && npm run albums",
     "start": "live-server --port=3000 --open=./",
     "prebuild": "npm run pubs && npm run albums",
@@ -27,6 +28,8 @@
     "live-server": "^1.2.0"
   },
   "dependencies": {
+    "@tensorflow-models/blazeface": "^0.1.0",
+    "@tensorflow/tfjs-node": "^4.22.0",
     "bibtex-parse-js": "^0.0.23"
   }
 }

@@ -30,6 +30,11 @@ Update these items for your own site:
    - Replace assets/images/prof_pic.jpg
    - Replace assets/data/cv.pdf
 
+Profile image automation
+- Quick helper: `tools/detect_profile_face.html` — open in a browser to detect the primary face and get a recommended `object-position: X% Y%` value.
+- Apply automatically: `node tools/apply_profile_focus.js "X% Y%"` will patch `index.html` to set the profile `object-position`.
+- Automated detector (optional): `npm run detect-profile-face` runs a TensorFlow detector (may require Node 18). This is provided for convenience but the browser helper + apply script avoids native installs.
+
 5. Publications
    - Update DBLP settings in convertBib.js
    - Run npm run pubs to regenerate assets/data/publications.json
