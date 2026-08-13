@@ -49,7 +49,7 @@
      */
     class SubstackBlogManager {
       constructor(substackUsername) {
-        this.substackUsername = longconversations;
+        this.substackUsername = substackUsername;
         this.feedUrl = `https://${substackUsername}.substack.com/api/v1/posts?limit=50&sort=new`;
         this.blogPosts = [];
       }
