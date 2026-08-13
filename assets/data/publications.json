@@ -16,6 +16,22 @@
     }
   },
   {
+    "citationKey": "DBLP:journals/iacr/AshurHS26",
+    "entryType": "article",
+    "entryTags": {
+      "author": "Tomer Ashur and\n                  Carmit Hazay and\n                  Rahul Satish",
+      "title": "Oblivious Garbling and its Applications",
+      "journal": "{IACR} Cryptol. ePrint Arch.",
+      "volume": "2026",
+      "pages": "1132",
+      "year": "2026",
+      "url": "https://eprint.iacr.org/2026/1132",
+      "timestamp": "Wed, 12 Aug 2026 01:00:00 +0200",
+      "biburl": "https://dblp.org/rec/journals/iacr/AshurHS26.bib",
+      "bibsource": "dblp computer science bibliography, https://dblp.org"
+    }
+  },
+  {
     "citationKey": "DBLP:conf/asiacrypt/DavidMS25",
     "entryType": "inproceedings",
     "entryTags": {
@@ -24,6 +40,7 @@
       "title": "Rumors {MPC:} {GOD} for Dynamic Committees, Low Communication via\n                  Constant-Round Chat",
       "booktitle": "Advances in Cryptology - {ASIACRYPT} 2025 - 31st International Conference\n                  on the Theory and Application of Cryptology and Information Security,\n                  Melbourne, VIC, Australia, December 8-12, 2025, Proceedings, Part\n                  {V}",
       "series": "Lecture Notes in Computer Science",
+      "volume": "16249",
       "pages": "102--132",
       "publisher": "Springer",
       "year": "2025",
