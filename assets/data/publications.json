@@ -32,6 +32,22 @@
     }
   },
   {
+    "citationKey": "DBLP:journals/iacr/AcharyaMRS26",
+    "entryType": "article",
+    "entryTags": {
+      "author": "Anasuya Acharya and\n                  Pierre Meyer and\n                  Divya Ravi and\n                  Rahul Satish",
+      "title": "Sublinear-Communication Layered {MPC} from {HSS}",
+      "journal": "{IACR} Cryptol. ePrint Arch.",
+      "volume": "2026",
+      "pages": "1445",
+      "year": "2026",
+      "url": "https://eprint.iacr.org/2026/1445",
+      "timestamp": "Mon, 17 Aug 2026 01:00:00 +0200",
+      "biburl": "https://dblp.org/rec/journals/iacr/AcharyaMRS26.bib",
+      "bibsource": "dblp computer science bibliography, https://dblp.org"
+    }
+  },
+  {
     "citationKey": "DBLP:conf/asiacrypt/DavidMS25",
     "entryType": "inproceedings",
     "entryTags": {
