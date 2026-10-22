@@ -14,6 +14,7 @@
       <div class="nav-links">
         <a href="bio.html">Bio</a>
         <a href="research.html">Research</a>
+        <a href="news.html">News</a>
         <a href="blog.html">Blog</a>
         <a href="links.html">Links</a>
         <a href="albums/" target="_blank">Albums</a>
@@ -102,8 +103,14 @@
             authors: this.formatAuthors(tags.author || ''),
             year: tags.year || '',
             type: pubType,
-            venue: this.cleanText(tags.journal || tags.booktitle || 'Unknown Venue'),
+            venue: this.cleanText(entry.entryType === 'inproceedings'
+              ? (tags.conferenceShortName || tags.booktitle || tags.journal || 'Unknown Venue')
+              : (tags.journal || tags.booktitle || 'Unknown Venue')),
             url: url || doiUrl,
+            eprintUrl: this.normalizeUrl(tags.eprintUrl || (journalStr.includes('eprint') ? url || doiUrl : '')),
+            versionType: entry.entryType === 'inproceedings'
+              ? 'conference'
+              : (journalStr.includes('eprint') ? 'eprint' : 'paper'),
             pages: tags.pages || '',
             abstract: tags.abstract || 'No abstract available',
             tags: this.extractTags(tags.title, tags.keywords)
@@ -175,7 +182,10 @@
               <h3>${pub.title}</h3>
               <p class="pub-authors">${pub.authors} · <em>${pub.venue}</em></p>
             </div>
-            ${pub.url ? `<a href="${pub.url}" target="_blank">View →</a>` : ''}
+            <div class="pub-links">
+              ${pub.versionType === 'conference' && pub.eprintUrl ? `<a href="${pub.eprintUrl}" target="_blank" rel="noopener noreferrer">ePrint version</a>` : ''}
+              ${pub.url ? `<a href="${pub.url}" target="_blank" rel="noopener noreferrer">${pub.versionType === 'conference' ? 'Camera-ready version' : 'ePrint version'}</a>` : ''}
+            </div>
           </div>
         `).join('');
       }

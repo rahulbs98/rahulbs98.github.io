@@ -14,6 +14,7 @@
       <div class="nav-links">
         <a href="bio.html">Bio</a>
         <a href="research.html">Research</a>
+        <a href="news.html">News</a>
         <a href="blog.html">Blog</a>
         <a href="links.html">Links</a>
         <a href="albums/" target="_blank">Albums</a>
@@ -27,10 +28,14 @@
   <main>
     <h1>Latest Articles</h1>
     <p style="font-size: 1.1rem; color: var(--color-text-secondary); margin-bottom: var(--spacing-xl); text-align: center;">
-      Thoughts on cryptography, privacy, security, and technology via Substack.
+      Two spaces for different kinds of writing.
     </p>
 
-    <div id="blog-container" class="blog-grid">
+    <p style="text-align: center; margin-bottom: var(--spacing-xl);">
+      <a href="https://rahulsatish98.substack.com/publish" target="_blank" rel="noopener noreferrer">Write or publish on the original Substack →</a>
+    </p>
+
+    <div id="blog-container">
       <!-- Blog posts will be loaded here -->
     </div>
     
@@ -45,13 +50,13 @@
 
   <script>
     /**
-     * Substack Blog Manager - Fetches RSS feed and displays posts
+    * Substack Blog Manager - Loads the build-time RSS snapshot and displays posts
      */
     class SubstackBlogManager {
       constructor(substackUsername) {
         this.substackUsername = substackUsername;
-        this.feedUrl = `https://${substackUsername}.substack.com/api/v1/posts?limit=50&sort=new`;
-        this.blogPosts = [];
+        this.feedUrl = 'assets/data/blog.json';
+        this.sections = {};
       }
 
       async loadBlogPosts() {
@@ -62,7 +67,6 @@
         try {
           loadingDiv.style.display = 'block';
 
-          // Try to fetch from Substack API
           const response = await fetch(this.feedUrl);
           
           if (!response.ok) {
@@ -70,7 +74,7 @@
           }
 
           const data = await response.json();
-          this.blogPosts = this.processSubstackPosts(data.posts || []);
+          this.sections = data.sections || {};
           
           loadingDiv.style.display = 'none';
           this.render();
@@ -88,46 +92,38 @@
         }
       }
 
-      processSubstackPosts(posts) {
-        return posts
-          .filter(post => post.type === 'newsletter' && post.publication_id) // Only published posts
-          .map(post => ({
-            id: post.id,
-            title: post.title,
-            date: new Date(post.post_date).toLocaleDateString('en-US', { 
-              year: 'numeric', 
-              month: 'long', 
-              day: 'numeric' 
-            }),
-            category: post.section || 'Article',
-            description: post.subtitle || post.body_text?.substring(0, 150) + '...' || 'Read the full post on Substack',
-            image: post.cover_image || null,
-            url: post.canonical_url || `https://${this.substackUsername}.substack.com/p/${post.slug}`
-          }))
-          .sort((a, b) => new Date(b.date) - new Date(a.date))
-          .slice(0, 12); // Limit to 12 most recent posts
-      }
-
       render() {
         const container = document.getElementById('blog-container');
+        container.innerHTML = Object.values(this.sections).map(section => `
+          <section class="blog-section">
+            <div class="blog-section-heading">
+              <div>
+                <p class="blog-section-kicker">Substack</p>
+                <h2>${this.escapeHtml(section.title)}</h2>
+                <p>${this.escapeHtml(section.description)}</p>
+              </div>
+              <a href="${this.escapeHtml(section.publicationUrl)}" target="_blank" rel="noopener noreferrer">Open publication →</a>
+            </div>
+            <div class="blog-grid">
+              ${section.posts.length ? section.posts.map(post => this.renderPost(post)).join('') : '<div class="empty-state"><p>No published posts here yet.</p></div>'}
+            </div>
+          </section>
+        `).join('');
+      }
 
-        if (this.blogPosts.length === 0) {
-          container.innerHTML = '<div class="empty-state"><p>No blog posts available yet.</p></div>';
-          return;
-        }
-
-        container.innerHTML = this.blogPosts.map(post => `
+      renderPost(post) {
+        return `
           <article class="blog-card">
             ${post.image ? `<div class="blog-image" style="background-image: url('${this.escapeHtml(post.image)}')"></div>` : '<div class="blog-image" style="background: linear-gradient(135deg, var(--color-accent), var(--color-accent-tertiary));"></div>'}
             <div class="blog-content">
               <span class="blog-category">${this.escapeHtml(post.category)}</span>
-              <h2>${this.escapeHtml(post.title)}</h2>
-              <p class="blog-date">${post.date}</p>
+              <h3>${this.escapeHtml(post.title)}</h3>
+              <p class="blog-date">${post.date ? new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : ''}</p>
               <p class="blog-description">${this.escapeHtml(post.description)}</p>
               <a href="${this.escapeHtml(post.url)}" target="_blank" rel="noopener noreferrer" class="read-more">Read on Substack →</a>
             </div>
           </article>
-        `).join('');
+        `;
       }
 
       escapeHtml(text) {
@@ -140,7 +136,7 @@
     // Initialize blog manager with your Substack username
     // Replace 'your-substack-username' with your actual Substack subdomain
     document.addEventListener('DOMContentLoaded', () => {
-      const blogManager = new SubstackBlogManager('rahulsatish98');
+      const blogManager = new SubstackBlogManager('longconversations');
       blogManager.loadBlogPosts();
     });
   </script>

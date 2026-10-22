@@ -9,7 +9,7 @@ To connect your Substack blog to the website, you need to update the blog page w
 1. **Open `blog.html`**
 2. **Find this line** (near the bottom):
   ```javascript
-  const blogManager = new SubstackBlogManager('rahulsatish98');
+  const blogManager = new SubstackBlogManager('longconversations');
   ```
 
 3. **Replace `'rahulsatish98'`** with your Substack subdomain
@@ -17,8 +17,10 @@ To connect your Substack blog to the website, you need to update the blog page w
 
 ### How It Works:
 
-- The blog page automatically fetches your latest 12 published posts from your Substack RSS feed
-- Posts are displayed with title, date, category, excerpt, and a link to read on Substack
+- `npm run blog` fetches the latest 12 published posts from both Substack RSS feeds into `assets/data/blog.json`
+- The blog page reads the local snapshot, avoiding browser-side API/CORS failures on GitHub Pages
+- `Long Conversations` is the personal/politics section; `Rahul Satish` is the original technical/collaborative section
+- Posts are displayed with title, date, category, excerpt, and a link to read on the relevant Substack
 - If a post has a cover image, it's displayed; otherwise, it shows a gradient background
 - New posts will automatically appear when you publish them on Substack
 
@@ -70,9 +72,9 @@ const SOCIAL_LINKS = [
 
 ---
 
-## Publications from BibTeX
+## Publications from DBLP and Google Scholar
 
-Publications automatically load from `assets/data/publications.json` which is generated from DBLP BibTeX.
+Publications automatically load from `assets/data/publications.json`, generated as the deduplicated union of DBLP BibTeX and the configured Google Scholar profile.
 
 To update publications:
 
@@ -80,7 +82,7 @@ To update publications:
 npm run pubs
 ```
 
-This will fetch your latest BibTeX from DBLP, update `publications.bib`, and regenerate the JSON file.
+This fetches the latest DBLP BibTeX, reads the configured Google Scholar profile, and regenerates the combined JSON file. If DBLP is temporarily blocked, the existing generated data is retained.
 
 ---
 
@@ -106,6 +108,28 @@ Regenerate `albums.json` with:
 
 ```bash
 npm run albums
+```
+
+## Academic News
+
+`news.html` is a personal academic timeline, not an external news reader. ePrint announcements and accepted conference publications are generated from `assets/data/publications.json`. Add talks, awards, visits, and other updates to `assets/data/news.manual.json`:
+
+```json
+[
+  {
+    "date": "2026-10-22",
+    "category": "Talk",
+    "title": "Talk title",
+    "summary": "A short description of the talk or academic update.",
+    "url": "https://example.com/event"
+  }
+]
+```
+
+Regenerate the timeline with:
+
+```bash
+npm run news
 ```
 
 ---

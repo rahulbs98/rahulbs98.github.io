@@ -1,34 +1,42 @@
 [
   {
     "citationKey": "DBLP:journals/iacr/AcharyaHS26",
-    "entryType": "article",
+    "entryType": "inproceedings",
     "entryTags": {
       "author": "Anasuya Acharya and\n                  Carmit Hazay and\n                  Rahul Satish",
       "title": "The Landscape of Reusable Garbling",
-      "journal": "{IACR} Cryptol. ePrint Arch.",
       "volume": "2026",
       "pages": "492",
       "year": "2026",
-      "url": "https://eprint.iacr.org/2026/492",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-36264-3_1",
       "timestamp": "Sat, 21 Mar 2026 00:00:00 +0100",
       "biburl": "https://dblp.org/rec/journals/iacr/AcharyaHS26.bib",
-      "bibsource": "dblp computer science bibliography, https://dblp.org"
+      "bibsource": "dblp computer science bibliography, https://dblp.org",
+      "eprintUrl": "https://eprint.iacr.org/2026/492.pdf",
+      "dblpUrl": "https://dblp.org/rec/journals/iacr/AcharyaHS26",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LskQKm0AAAAJ&citation_for_view=LskQKm0AAAAJ:2osOgNQ5qMEC",
+      "booktitle": "International Conference on Security and Cryptography …",
+      "conferenceShortName": "SCN"
     }
   },
   {
     "citationKey": "DBLP:journals/iacr/AshurHS26",
-    "entryType": "article",
+    "entryType": "inproceedings",
     "entryTags": {
       "author": "Tomer Ashur and\n                  Carmit Hazay and\n                  Rahul Satish",
       "title": "Oblivious Garbling and its Applications",
-      "journal": "{IACR} Cryptol. ePrint Arch.",
       "volume": "2026",
       "pages": "1132",
       "year": "2026",
-      "url": "https://eprint.iacr.org/2026/1132",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-36264-3_2",
       "timestamp": "Wed, 12 Aug 2026 01:00:00 +0200",
       "biburl": "https://dblp.org/rec/journals/iacr/AshurHS26.bib",
-      "bibsource": "dblp computer science bibliography, https://dblp.org"
+      "bibsource": "dblp computer science bibliography, https://dblp.org",
+      "eprintUrl": "https://eprint.iacr.org/2026/1132",
+      "dblpUrl": "https://dblp.org/rec/journals/iacr/AshurHS26",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LskQKm0AAAAJ&citation_for_view=LskQKm0AAAAJ:qjMakFHDy7sC",
+      "booktitle": "International Conference on Security and Cryptography …",
+      "conferenceShortName": "SCN"
     }
   },
   {
@@ -44,7 +52,10 @@
       "url": "https://eprint.iacr.org/2026/1445",
       "timestamp": "Mon, 17 Aug 2026 01:00:00 +0200",
       "biburl": "https://dblp.org/rec/journals/iacr/AcharyaMRS26.bib",
-      "bibsource": "dblp computer science bibliography, https://dblp.org"
+      "bibsource": "dblp computer science bibliography, https://dblp.org",
+      "eprintUrl": "https://eprint.iacr.org/2026/1445.pdf",
+      "dblpUrl": "https://dblp.org/rec/journals/iacr/AcharyaMRS26",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LskQKm0AAAAJ&citation_for_view=LskQKm0AAAAJ:UeHWp8X0CEIC"
     }
   },
   {
@@ -52,35 +63,23 @@
     "entryType": "inproceedings",
     "entryTags": {
       "author": "Bernardo David and\n                  Arup Mondal and\n                  Rahul Satish",
-      "editor": "Goichiro Hanaoka and\n                  Bo{-}Yin Yang",
       "title": "Rumors {MPC:} {GOD} for Dynamic Committees, Low Communication via\n                  Constant-Round Chat",
-      "booktitle": "Advances in Cryptology - {ASIACRYPT} 2025 - 31st International Conference\n                  on the Theory and Application of Cryptology and Information Security,\n                  Melbourne, VIC, Australia, December 8-12, 2025, Proceedings, Part\n                  {V}",
-      "series": "Lecture Notes in Computer Science",
       "volume": "16249",
       "pages": "102--132",
-      "publisher": "Springer",
       "year": "2025",
-      "url": "https://doi.org/10.1007/978-981-95-5116-3\\_4",
-      "doi": "10.1007/978-981-95-5116-3\\_4",
+      "url": "https://link.springer.com/chapter/10.1007/978-981-95-5116-3_4",
       "timestamp": "Thu, 08 Jan 2026 20:58:00 +0100",
       "biburl": "https://dblp.org/rec/conf/asiacrypt/DavidMS25.bib",
-      "bibsource": "dblp computer science bibliography, https://dblp.org"
-    }
-  },
-  {
-    "citationKey": "DBLP:journals/iacr/DavidMS25",
-    "entryType": "article",
-    "entryTags": {
-      "author": "Bernardo David and\n                  Arup Mondal and\n                  Rahul Satish",
-      "title": "Rumors {MPC:} {GOD} for Dynamic Committees, Low Communication via\n                  Constant-Round Chat",
-      "journal": "{IACR} Cryptol. ePrint Arch.",
-      "volume": "2025",
-      "pages": "1464",
-      "year": "2025",
-      "url": "https://eprint.iacr.org/2025/1464",
-      "timestamp": "Thu, 28 Aug 2025 01:00:00 +0200",
-      "biburl": "https://dblp.org/rec/journals/iacr/DavidMS25.bib",
-      "bibsource": "dblp computer science bibliography, https://dblp.org"
+      "bibsource": "dblp computer science bibliography, https://dblp.org",
+      "editor": "Goichiro Hanaoka and\n                  Bo{-}Yin Yang",
+      "booktitle": "Advances in Cryptology - {ASIACRYPT} 2025 - 31st International Conference\n                  on the Theory and Application of Cryptology and Information Security,\n                  Melbourne, VIC, Australia, December 8-12, 2025, Proceedings, Part\n                  {V}",
+      "series": "Lecture Notes in Computer Science",
+      "publisher": "Springer",
+      "doi": "10.1007/978-981-95-5116-3\\_4",
+      "eprintUrl": "https://eprint.iacr.org/2025/1464.pdf",
+      "dblpUrl": "https://dblp.org/rec/conf/asiacrypt/DavidMS25",
+      "conferenceShortName": "ASIACRYPT",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LskQKm0AAAAJ&citation_for_view=LskQKm0AAAAJ:9yKSN-GCB0IC"
     }
   },
   {
@@ -96,7 +95,26 @@
       "url": "https://eprint.iacr.org/2024/389",
       "timestamp": "Mon, 18 Mar 2024 00:00:00 +0100",
       "biburl": "https://dblp.org/rec/journals/iacr/AshurHS24.bib",
-      "bibsource": "dblp computer science bibliography, https://dblp.org"
+      "bibsource": "dblp computer science bibliography, https://dblp.org",
+      "eprintUrl": "https://eprint.iacr.org/2024/389",
+      "dblpUrl": "https://dblp.org/rec/journals/iacr/AshurHS24",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LskQKm0AAAAJ&citation_for_view=LskQKm0AAAAJ:IjCSPb-OGe4C"
+    }
+  },
+  {
+    "citationKey": "scholar-garbling-3-input-and-gates",
+    "entryType": "article",
+    "entryTags": {
+      "title": "Garbling 3-input AND gates",
+      "author": "T Ashur, C Hazay, R Satish",
+      "year": "2023",
+      "journal": "cfail.org",
+      "url": "https://www.cfail.org/_files/ugd/6a3e24_425474ea0b834ac7aed0b3371acaec60.pdf",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LskQKm0AAAAJ&citation_for_view=LskQKm0AAAAJ:u5HHmVD_uO8C",
+      "scholarConferenceVenue": "",
+      "conferenceShortName": "",
+      "scholarCameraReadyUrl": "https://scholar.google.com/scholar?cluster=2400824350989222929&hl=en&oi=scholarr",
+      "scholarEprintUrl": ""
     }
   }
 ]

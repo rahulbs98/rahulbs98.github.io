@@ -118,6 +118,14 @@ fn optimize_image(source: &Path, dest: &Path, max_dimension: u32, quality: u8) -
   Ok(())
 }
 
+fn web_filename(filename: &str) -> String {
+  let stem = Path::new(filename)
+    .file_stem()
+    .and_then(|value| value.to_str())
+    .unwrap_or("photo");
+  format!("{}.jpg", stem)
+}
+
 // Scan folder for images
 #[tauri::command]
 fn scan_photos(folder_path: String) -> Result<Vec<PhotoInfo>, String> {
@@ -188,7 +196,7 @@ fn create_album(
     .par_iter()
     .map(|photo| {
       let source = Path::new(&photo.path);
-      let dest = album_folder.join(&photo.filename);
+      let dest = album_folder.join(web_filename(&photo.filename));
 
       if source.exists() {
         optimize_image(source, &dest, 2000, 85)
@@ -224,7 +232,8 @@ fn create_album(
 
   // Add new photos to metadata
   for photo in &photos {
-    let key = format!("{}/{}", normalized_album_name, photo.filename);
+    let output_filename = web_filename(&photo.filename);
+    let key = format!("{}/{}", normalized_album_name, output_filename);
     metadata[key] = serde_json::json!({
       "title": photo.title,
       "tags": photo.tags,

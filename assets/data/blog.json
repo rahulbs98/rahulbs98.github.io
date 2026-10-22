@@ -1,0 +1,39 @@
+{
+  "sections": {
+    "personal": {
+      "title": "Long Conversations",
+      "description": "Personal writing, politics, and longer reflections.",
+      "feedUrl": "https://longconversations.substack.com/feed",
+      "publicationUrl": "https://longconversations.substack.com",
+      "publishUrl": "https://longconversations.substack.com/publish",
+      "posts": [
+        {
+          "id": "https://longconversations.substack.com/p/when-every-question-becomes-a-side",
+          "title": "When Every Question Becomes a Side",
+          "date": "2026-08-07T14:38:54.000Z",
+          "category": "Article",
+          "description": "How political loyalty decides which facts we are allowed to admit",
+          "image": "https://substackcdn.com/image/fetch/$s_!EJV-!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F32c7389f-0c1f-48f5-ad3c-4c7e456575a2_2592x1552.jpeg",
+          "url": "https://longconversations.substack.com/p/when-every-question-becomes-a-side"
+        },
+        {
+          "id": "https://longconversations.substack.com/p/before-we-can-disagree",
+          "title": "Before We Can Disagree",
+          "date": "2026-07-16T22:55:30.000Z",
+          "category": "Article",
+          "description": "Attention, shared reality, and the foundations of democracy",
+          "image": "https://substackcdn.com/image/fetch/$s_!ZRYk!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb9dc2d6a-6168-4c8f-a490-adde00685925_708x708.png",
+          "url": "https://longconversations.substack.com/p/before-we-can-disagree"
+        }
+      ]
+    },
+    "original": {
+      "title": "Rahul Satish",
+      "description": "Technical writing and a shared space for collaborators.",
+      "feedUrl": "https://rahulsatish98.substack.com/feed",
+      "publicationUrl": "https://rahulsatish98.substack.com",
+      "publishUrl": "https://rahulsatish98.substack.com/publish",
+      "posts": []
+    }
+  }
+}

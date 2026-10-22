@@ -1,0 +1,127 @@
+{
+  "description": "Academic news and updates from Rahul Satish",
+  "items": [
+    {
+      "id": "talk-usi-lugano-2026-10-19",
+      "title": "Talk at USI Lugano",
+      "summary": "Academic talk at Universita della Svizzera italiana in Lugano.",
+      "category": "Talk",
+      "date": "2026-10-19",
+      "url": "https://www.usi.ch/",
+      "videoUrl": "",
+      "source": "Rahul Satish"
+    },
+    {
+      "id": "eprint-DBLP:journals/iacr/AcharyaMRS26",
+      "title": "New work on \"Sublinear-Communication Layered MPC from HSS\" is now on ePrint",
+      "summary": "Anasuya Acharya and Pierre Meyer and Divya Ravi and Rahul Satish · 2026",
+      "category": "ePrint",
+      "date": "2026-08-16T23:00:00.000Z",
+      "url": "https://eprint.iacr.org/2026/1445",
+      "source": "Research"
+    },
+    {
+      "id": "acceptance-DBLP:journals/iacr/AshurHS26",
+      "title": "My work on \"Oblivious Garbling and its Applications\" was accepted at SCN",
+      "summary": "Conference details to be added · 2026",
+      "category": "Publication",
+      "date": "2026-08-11T23:00:00.000Z",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-36264-3_2",
+      "source": "Research"
+    },
+    {
+      "id": "eprint-DBLP:journals/iacr/AshurHS26",
+      "title": "New work on \"Oblivious Garbling and its Applications\" is now on ePrint",
+      "summary": "Tomer Ashur and Carmit Hazay and Rahul Satish · 2026",
+      "category": "ePrint",
+      "date": "2026-08-11T23:00:00.000Z",
+      "url": "https://eprint.iacr.org/2026/1132",
+      "source": "Research"
+    },
+    {
+      "id": "talk-tpmpc-2026",
+      "title": "Sublinear-Communication from Layered MPC from HSS",
+      "summary": "TPMPC 2026 · Aarhus, Denmark",
+      "category": "Talk",
+      "date": "2026-05",
+      "url": "https://www.multipartycomputation.com/tpmpc-2026",
+      "videoUrl": "https://au.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=821239d1-90e6-4a8e-a548-b4510097822e",
+      "source": "Rahul Satish"
+    },
+    {
+      "id": "acceptance-DBLP:journals/iacr/AcharyaHS26",
+      "title": "My work on \"The Landscape of Reusable Garbling\" was accepted at SCN",
+      "summary": "Conference details to be added · 2026",
+      "category": "Publication",
+      "date": "2026-03-20T23:00:00.000Z",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-36264-3_1",
+      "source": "Research"
+    },
+    {
+      "id": "eprint-DBLP:journals/iacr/AcharyaHS26",
+      "title": "New work on \"The Landscape of Reusable Garbling\" is now on ePrint",
+      "summary": "Anasuya Acharya and Carmit Hazay and Rahul Satish · 2026",
+      "category": "ePrint",
+      "date": "2026-03-20T23:00:00.000Z",
+      "url": "https://eprint.iacr.org/2026/492.pdf",
+      "source": "Research"
+    },
+    {
+      "id": "acceptance-DBLP:conf/asiacrypt/DavidMS25",
+      "title": "My work on \"Rumors MPC: GOD for Dynamic Committees, Low Communication via Constant-Round Chat\" was accepted at ASIACRYPT",
+      "summary": "Melbourne, VIC, Australia · 2025",
+      "category": "Publication",
+      "date": "2026-01-08T19:58:00.000Z",
+      "url": "https://link.springer.com/chapter/10.1007/978-981-95-5116-3_4",
+      "source": "Research"
+    },
+    {
+      "id": "eprint-DBLP:conf/asiacrypt/DavidMS25",
+      "title": "New work on \"Rumors MPC: GOD for Dynamic Committees, Low Communication via Constant-Round Chat\" is now on ePrint",
+      "summary": "Bernardo David and Arup Mondal and Rahul Satish · 2025",
+      "category": "ePrint",
+      "date": "2026-01-08T19:58:00.000Z",
+      "url": "https://eprint.iacr.org/2025/1464.pdf",
+      "source": "Research"
+    },
+    {
+      "id": "talk-asiacrypt-2025",
+      "title": "Rumors MPC: GOD for Dynamic Committees, Low Communication via Constant-Round Chat",
+      "summary": "ASIACRYPT 2025 · Melbourne, Australia",
+      "category": "Talk",
+      "date": "2025-12",
+      "url": "https://asiacrypt.iacr.org/2025/program.php",
+      "videoUrl": "https://www.youtube.com/@TheIACR/",
+      "source": "Rahul Satish"
+    },
+    {
+      "id": "talk-tpmpc-2024",
+      "title": "Garbling gadgets and its applications to oblivious garbling",
+      "summary": "TPMPC 2024 · Darmstadt, Germany",
+      "category": "Talk",
+      "date": "2024-06",
+      "url": "https://www.multipartycomputation.com/tpmpc-2024",
+      "videoUrl": "https://www.youtube.com/watch?v=uM5tDmQXmxc",
+      "source": "Rahul Satish"
+    },
+    {
+      "id": "eprint-DBLP:journals/iacr/AshurHS24",
+      "title": "New work on \"On the Feasibility of Sliced Garbling\" is now on ePrint",
+      "summary": "Tomer Ashur and Carmit Hazay and Rahul Satish · 2024",
+      "category": "ePrint",
+      "date": "2024-03-17T23:00:00.000Z",
+      "url": "https://eprint.iacr.org/2024/389",
+      "source": "Research"
+    },
+    {
+      "id": "talk-cfail-2023",
+      "title": "Garbling 3-input AND gates",
+      "summary": "CFAIL 2023 · Remote",
+      "category": "Talk",
+      "date": "2023-08",
+      "url": "https://www.cfail.org/cfail2023",
+      "videoUrl": "https://www.youtube.com/watch?v=dswiwcGJWrg",
+      "source": "Rahul Satish"
+    }
+  ]
+}

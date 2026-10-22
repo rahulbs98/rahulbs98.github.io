@@ -1,0 +1,46 @@
+[
+	{
+		"id": "talk-usi-lugano-2026-10-19",
+		"date": "2026-10-19",
+		"category": "Talk",
+		"title": "Talk at USI Lugano",
+		"summary": "Academic talk at Universita della Svizzera italiana in Lugano.",
+		"url": "https://www.usi.ch/"
+	},
+	{
+		"id": "talk-tpmpc-2026",
+		"date": "2026-05",
+		"category": "Talk",
+		"title": "Sublinear-Communication from Layered MPC from HSS",
+		"summary": "TPMPC 2026 · Aarhus, Denmark",
+		"url": "https://www.multipartycomputation.com/tpmpc-2026",
+		"videoUrl": "https://au.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=821239d1-90e6-4a8e-a548-b4510097822e"
+	},
+	{
+		"id": "talk-asiacrypt-2025",
+		"date": "2025-12",
+		"category": "Talk",
+		"title": "Rumors MPC: GOD for Dynamic Committees, Low Communication via Constant-Round Chat",
+		"summary": "ASIACRYPT 2025 · Melbourne, Australia",
+		"url": "https://asiacrypt.iacr.org/2025/program.php",
+		"videoUrl": "https://www.youtube.com/@TheIACR/"
+	},
+	{
+		"id": "talk-tpmpc-2024",
+		"date": "2024-06",
+		"category": "Talk",
+		"title": "Garbling gadgets and its applications to oblivious garbling",
+		"summary": "TPMPC 2024 · Darmstadt, Germany",
+		"url": "https://www.multipartycomputation.com/tpmpc-2024",
+		"videoUrl": "https://www.youtube.com/watch?v=uM5tDmQXmxc"
+	},
+	{
+		"id": "talk-cfail-2023",
+		"date": "2023-08",
+		"category": "Talk",
+		"title": "Garbling 3-input AND gates",
+		"summary": "CFAIL 2023 · Remote",
+		"url": "https://www.cfail.org/cfail2023",
+		"videoUrl": "https://www.youtube.com/watch?v=dswiwcGJWrg"
+	}
+]

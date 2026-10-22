@@ -11,6 +11,20 @@ npm start
 
 Local site runs at http://localhost:3000.
 
+To validate the site and open a local preview:
+
+```bash
+npm test
+```
+
+The preview opens at http://localhost:3000. Use `npm run validate` when you want validation without starting a server.
+
+To build, commit, and push the site in one guarded step:
+
+```bash
+npm run publish -- "Describe your update"
+```
+
 ## Customize Your Site
 
 Update these items for your own site:
@@ -21,7 +35,10 @@ Update these items for your own site:
 
 2. Substack blog
    - Open blog.html
-   - Update the Substack username in SubstackBlogManager
+   - `Long Conversations` is for personal writing and politics
+   - `Rahul Satish` is the original technical/collaborative publication
+   - Run `npm run blog` to snapshot both Substack RSS feeds
+   - Use each section's publication link to open or publish to that space
 
 3. Social links and footer
    - Edit social links in assets/js/components.js
@@ -36,8 +53,12 @@ Profile image automation
 - Automated detector (optional): `npm run detect-profile-face` runs a TensorFlow detector (may require Node 18). This is provided for convenience but the browser helper + apply script avoids native installs.
 
 5. Publications
-   - Update DBLP settings in convertBib.js
-   - Run npm run pubs to regenerate assets/data/publications.json
+   - Update DBLP and Google Scholar settings in convertBib.js
+   - Run `npm run pubs` to regenerate assets/data/publications.json as the union of both sources
+
+6. News
+   - Run `npm run news` to regenerate assets/data/news.json from publications and manual academic updates
+   - Add talks, awards, visits, and milestones to assets/data/news.manual.json
 
 ## Albums and Photo Manager
 
@@ -74,7 +95,8 @@ npm run dev
 ```
 
 The app:
-- Copies images into assets/images/albums/{normalized-album-name}/
+- Resizes sources into real JPEG files at assets/images/albums/{normalized-album-name}/ (maximum 2000px, quality 85)
+- Uses the generated `.jpg` filename in albums.meta.json even when the source is PNG, WebP, or GIF
 - Appends metadata to assets/data/albums.meta.json
 
 Then run npm run albums from website_src/.
@@ -86,7 +108,9 @@ See photomanager/README.md for detailed app setup.
 - npm start: run locally
 - npm run pubs: refresh publications
 - npm run albums: rebuild albums.json
-- npm run build: placeholder build hook
+- npm run blog: snapshot published Substack posts into blog.json
+- npm run news: generate your academic news timeline into news.json
+- npm run build: regenerate source data and validate the static site
 
 ## Deployment (GitHub Pages)
 

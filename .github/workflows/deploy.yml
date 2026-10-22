@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Run automation scripts
-        run: npm run pubs && npm run albums
+        run: npm run pubs && npm run albums && npm run blog && npm run news
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

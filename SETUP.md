@@ -25,6 +25,12 @@ Site runs at http://localhost:3000.
 ```bash
 npm run pubs    # publications.json from publications.bib
 npm run albums  # albums.json from albums.meta.json + images
+npm run blog    # blog.json from the Substack RSS feed
+npm run news    # news.json from publications and manual academic updates
+npm run build   # regenerate all data files and validate the static site
+npm test        # build, validate, and open a local preview
+npm run validate # build and validate without starting a server
+npm run publish -- "Describe your update"  # test, commit, and push to main
 ```
 
 ## Profile image focus
@@ -51,6 +57,7 @@ website_src/
 ├── blog.html                  # Blog (Substack)
 ├── research.html              # Research page
 ├── links.html                 # Links
+├── news.html                  # Security, privacy, and cryptography news
 ├── albums/
 │   └── index.html             # Photo gallery
 ├── assets/
@@ -64,10 +71,14 @@ website_src/
 │   └── data/
 │       ├── publications.json   # Generated from BibTeX
 │       ├── albums.meta.json    # Album metadata (source)
-│       └── albums.json         # Generated for gallery
+│       ├── albums.json         # Generated for gallery
+│       ├── news.manual.json    # Manual academic updates
+│       └── news.json           # Generated academic timeline
 ├── publications.bib           # DBLP BibTeX source
 ├── convertBib.js              # Generates publications.json
 ├── generateAlbums.js          # Generates albums.json
+├── generateBlog.js            # Generates blog.json from Substack RSS
+├── generateNews.js            # Generates news.json from RSS sources
 ├── CONFIG.md                  # Configuration guide
 └── photomanager/              # Tauri photo manager app
 ```

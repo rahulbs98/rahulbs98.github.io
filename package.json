@@ -6,11 +6,17 @@
   "scripts": {
     "pubs": "node convertBib.js",
     "albums": "node generateAlbums.js",
+    "blog": "node generateBlog.js",
+    "news": "node generateNews.js",
     "detect-profile-face": "node tools/detect_profile_face_tf.js",
-    "prestart": "npm run pubs && npm run albums",
+    "validate": "npm run build",
+    "test": "npm run validate && npm run preview",
+    "preview": "live-server --port=3000 --open=./",
+    "publish": "bash tools/publish.sh",
+    "prestart": "npm run pubs && npm run albums && npm run blog && npm run news",
     "start": "live-server --port=3000 --open=./",
-    "prebuild": "npm run pubs && npm run albums",
-    "build": "echo 'Add your production build steps here later'"
+    "prebuild": "npm run pubs && npm run albums && npm run blog && npm run news",
+    "build": "node tools/validate-site.js"
   },
   "repository": {
     "type": "git",

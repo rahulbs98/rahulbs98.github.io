@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News - Rahul Satish</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/components.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Rahul Satish</a>
+      <div class="nav-links">
+        <a href="bio.html">Bio</a>
+        <a href="research.html">Research</a>
+        <a href="news.html">News</a>
+        <a href="blog.html">Blog</a>
+        <a href="links.html">Links</a>
+        <a href="albums/" target="_blank">Albums</a>
+        <a href="assets/data/cv.pdf" target="_blank">CV</a>
+      </div>
+      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </nav>
+  </header>
+
+  <main class="news-page">
+    <div class="news-intro">
+      <p class="news-kicker">Academic life</p>
+      <h1>News</h1>
+      <p>New work, accepted publications, talks, visits, and the work around them.</p>
+    </div>
+    <div id="news-filters" class="news-filters" aria-label="Filter news"></div>
+    <div id="news-list" class="news-list"></div>
+    <div id="news-empty" class="empty-state" hidden>
+      <p>No news is available right now.</p>
+    </div>
+  </main>
+
+  <script>
+    class NewsPage {
+      constructor() {
+        this.items = [];
+        this.filter = 'All';
+      }
+
+      async load() {
+        try {
+          const response = await fetch('assets/data/news.json');
+          if (!response.ok) throw new Error('News data unavailable');
+          const data = await response.json();
+          this.items = data.items || [];
+          this.renderFilters();
+          this.render();
+        } catch (error) {
+          console.error(error);
+          document.getElementById('news-empty').hidden = false;
+        }
+      }
+
+      renderFilters() {
+        const categories = ['All', ...new Set(this.items.map(item => item.category))];
+        document.getElementById('news-filters').innerHTML = categories.map(category => `
+          <button class="news-filter ${category === 'All' ? 'active' : ''}" data-category="${this.escape(category)}">${this.escape(category)}</button>
+        `).join('');
+        document.querySelectorAll('.news-filter').forEach(button => {
+          button.addEventListener('click', () => {
+            this.filter = button.dataset.category;
+            document.querySelectorAll('.news-filter').forEach(item => item.classList.remove('active'));
+            button.classList.add('active');
+            this.render();
+          });
+        });
+      }
+
+      render() {
+        const visible = this.filter === 'All' ? this.items : this.items.filter(item => item.category === this.filter);
+        const list = document.getElementById('news-list');
+        document.getElementById('news-empty').hidden = visible.length > 0;
+        list.innerHTML = visible.map(item => `
+          <article class="news-item">
+            <div class="news-item-meta"><span>${this.escape(item.category)}</span><time>${this.formatDate(item.date)}</time></div>
+            <h2><a href="${this.escape(item.url)}" target="_blank" rel="noopener noreferrer">${this.escape(item.title)}</a></h2>
+            <p>${this.escape(item.summary || 'Read the original story.')}</p>
+            <div class="news-item-source">${this.escape(item.source)}
+              ${item.url ? `<a href="${this.escape(item.url)}" target="_blank" rel="noopener noreferrer">Details</a>` : ''}
+              ${item.videoUrl ? `<a href="${this.escape(item.videoUrl)}" target="_blank" rel="noopener noreferrer">Video</a>` : ''}
+            </div>
+          </article>
+        `).join('');
+      }
+
+      formatDate(value) {
+        if (/^\d{4}$/.test(value || '')) return value;
+        if (/^\d{4}-\d{2}$/.test(value || '')) {
+          return new Date(`${value}-01T00:00:00Z`).toLocaleDateString('en-US', { year: 'numeric', month: 'long', timeZone: 'UTC' });
+        }
+        return value ? new Date(value).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) : '';
+      }
+
+      escape(value) {
+        const element = document.createElement('div');
+        element.textContent = value || '';
+        return element.innerHTML;
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => new NewsPage().load());
+  </script>
+</body>
+</html>
