@@ -81,8 +81,9 @@
         list.innerHTML = visible.map(item => `
           <article class="news-item">
             <div class="news-item-meta"><span>${this.escape(item.category)}</span><time>${this.formatDate(item.date)}</time></div>
-            <h2><a href="${this.escape(item.url)}" target="_blank" rel="noopener noreferrer">${this.escape(item.title)}</a></h2>
+            <h2>${item.url ? `<a href="${this.escape(item.url)}" target="_blank" rel="noopener noreferrer">${this.escape(item.title)}</a>` : this.escape(item.title)}</h2>
             <p>${this.escape(item.summary || 'Read the original story.')}</p>
+            ${item.abstract ? `<details class="news-abstract"><summary>Abstract</summary><p>${this.escape(item.abstract)}</p></details>` : ''}
             <div class="news-item-source">${this.escape(item.source)}
               ${item.url ? `<a href="${this.escape(item.url)}" target="_blank" rel="noopener noreferrer">Details</a>` : ''}
               ${item.videoUrl ? `<a href="${this.escape(item.videoUrl)}" target="_blank" rel="noopener noreferrer">Video</a>` : ''}

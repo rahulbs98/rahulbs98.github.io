@@ -84,6 +84,7 @@ function manualNews() {
     id: item.id || `manual-${index + 1}`,
     title: item.title,
     summary: item.summary || '',
+    abstract: item.abstract || '',
     category: item.category || 'Academic life',
     date: item.date || '',
     url: item.url || '',

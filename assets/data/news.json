@@ -2,12 +2,35 @@
   "description": "Academic news and updates from Rahul Satish",
   "items": [
     {
+      "id": "eprint-2026-2588",
+      "title": "Eras MPC: Granular Preprocessing and Abort Recovery with Dynamic Committees",
+      "summary": "A new research paper is available on the IACR ePrint Archive.",
+      "abstract": "",
+      "category": "ePrint",
+      "date": "2026-10-24",
+      "url": "https://eprint.iacr.org/2026/2588",
+      "videoUrl": "",
+      "source": "Rahul Satish"
+    },
+    {
       "id": "talk-usi-lugano-2026-10-19",
-      "title": "Talk at USI Lugano",
-      "summary": "Academic talk at Universita della Svizzera italiana in Lugano.",
+      "title": "Towards Practical Dynamic-Committee MPC: Availability, DoS Resistance, and the Cost of Getting There",
+      "summary": "USI Lugano · Lugano, Switzerland",
+      "abstract": "Secure multiparty computation (MPC) lets parties compute on private inputs without revealing them. For long computations, a fixed set of servers is fragile: servers go offline, and a set known in advance is an easy denial-of-service target. Dynamic-committee models, such as Fluid MPC and YOSO MPC, pass the computation between small, changing committees, but information-theoretic protocols guaranteeing output delivery need communication growing as a high power of the committee size. After introducing the setting, this talk presents three steps towards practicality: letting committees interact for a few rounds before handover, cutting this cost; separating preprocessing and checkpointing from computation, so it resumes from the last valid state after failures; and using homomorphic secret sharing to make communication sublinear in the circuit size without fully homomorphic encryption.",
       "category": "Talk",
       "date": "2026-10-19",
       "url": "https://www.usi.ch/",
+      "videoUrl": "",
+      "source": "Rahul Satish"
+    },
+    {
+      "id": "visit-hslu-2026",
+      "title": "Visiting Chen-Da Liu Zhang at HSLU",
+      "summary": "HSLU, Rotkreuz · September-December 2026",
+      "abstract": "",
+      "category": "Academic life",
+      "date": "2026-09",
+      "url": "https://www.hslu.ch/",
       "videoUrl": "",
       "source": "Rahul Satish"
     },
@@ -42,6 +65,7 @@
       "id": "talk-tpmpc-2026",
       "title": "Sublinear-Communication from Layered MPC from HSS",
       "summary": "TPMPC 2026 · Aarhus, Denmark",
+      "abstract": "",
       "category": "Talk",
       "date": "2026-05",
       "url": "https://www.multipartycomputation.com/tpmpc-2026",
@@ -88,6 +112,7 @@
       "id": "talk-asiacrypt-2025",
       "title": "Rumors MPC: GOD for Dynamic Committees, Low Communication via Constant-Round Chat",
       "summary": "ASIACRYPT 2025 · Melbourne, Australia",
+      "abstract": "",
       "category": "Talk",
       "date": "2025-12",
       "url": "https://asiacrypt.iacr.org/2025/program.php",
@@ -95,9 +120,21 @@
       "source": "Rahul Satish"
     },
     {
+      "id": "internship-ntt-rd-2025-2026",
+      "title": "Internship at NTT R&D",
+      "summary": "NTT R&D · Tokyo · November 2025-February 2026",
+      "abstract": "",
+      "category": "Academic life",
+      "date": "2025-11",
+      "url": "https://www.rd.ntt/e/",
+      "videoUrl": "",
+      "source": "Rahul Satish"
+    },
+    {
       "id": "talk-tpmpc-2024",
       "title": "Garbling gadgets and its applications to oblivious garbling",
       "summary": "TPMPC 2024 · Darmstadt, Germany",
+      "abstract": "",
       "category": "Talk",
       "date": "2024-06",
       "url": "https://www.multipartycomputation.com/tpmpc-2024",
@@ -117,6 +154,7 @@
       "id": "talk-cfail-2023",
       "title": "Garbling 3-input AND gates",
       "summary": "CFAIL 2023 · Remote",
+      "abstract": "",
       "category": "Talk",
       "date": "2023-08",
       "url": "https://www.cfail.org/cfail2023",

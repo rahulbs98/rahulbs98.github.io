@@ -3,9 +3,34 @@
 		"id": "talk-usi-lugano-2026-10-19",
 		"date": "2026-10-19",
 		"category": "Talk",
-		"title": "Talk at USI Lugano",
-		"summary": "Academic talk at Universita della Svizzera italiana in Lugano.",
+		"title": "Towards Practical Dynamic-Committee MPC: Availability, DoS Resistance, and the Cost of Getting There",
+		"summary": "USI Lugano · Lugano, Switzerland",
+		"abstract": "Secure multiparty computation (MPC) lets parties compute on private inputs without revealing them. For long computations, a fixed set of servers is fragile: servers go offline, and a set known in advance is an easy denial-of-service target. Dynamic-committee models, such as Fluid MPC and YOSO MPC, pass the computation between small, changing committees, but information-theoretic protocols guaranteeing output delivery need communication growing as a high power of the committee size. After introducing the setting, this talk presents three steps towards practicality: letting committees interact for a few rounds before handover, cutting this cost; separating preprocessing and checkpointing from computation, so it resumes from the last valid state after failures; and using homomorphic secret sharing to make communication sublinear in the circuit size without fully homomorphic encryption.",
 		"url": "https://www.usi.ch/"
+	},
+	{
+		"id": "eprint-2026-2588",
+		"date": "2026-10-24",
+		"category": "ePrint",
+		"title": "Eras MPC: Granular Preprocessing and Abort Recovery with Dynamic Committees",
+		"summary": "A new research paper is available on the IACR ePrint Archive.",
+		"url": "https://eprint.iacr.org/2026/2588"
+	},
+	{
+		"id": "visit-hslu-2026",
+		"date": "2026-09",
+		"category": "Academic life",
+		"title": "Visiting Chen-Da Liu Zhang at HSLU",
+		"summary": "HSLU, Rotkreuz · September-December 2026",
+		"url": "https://www.hslu.ch/"
+	},
+	{
+		"id": "internship-ntt-rd-2025-2026",
+		"date": "2025-11",
+		"category": "Academic life",
+		"title": "Internship at NTT R&D",
+		"summary": "NTT R&D · Tokyo · November 2025-February 2026",
+		"url": "https://www.rd.ntt/e/"
 	},
 	{
 		"id": "talk-tpmpc-2026",
