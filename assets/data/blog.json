@@ -1,5 +1,13 @@
 {
   "sections": {
+    "original": {
+      "title": "Rahul Satish",
+      "description": "Technical writing and a shared space for collaborators.",
+      "feedUrl": "https://rahulsatish98.substack.com/feed",
+      "publicationUrl": "https://rahulsatish98.substack.com",
+      "publishUrl": "https://rahulsatish98.substack.com/publish",
+      "posts": []
+    },
     "personal": {
       "title": "Long Conversations",
       "description": "Personal writing, politics, and longer reflections.",
@@ -26,14 +34,6 @@
           "url": "https://longconversations.substack.com/p/before-we-can-disagree"
         }
       ]
-    },
-    "original": {
-      "title": "Rahul Satish",
-      "description": "Technical writing and a shared space for collaborators.",
-      "feedUrl": "https://rahulsatish98.substack.com/feed",
-      "publicationUrl": "https://rahulsatish98.substack.com",
-      "publishUrl": "https://rahulsatish98.substack.com/publish",
-      "posts": []
     }
   }
 }

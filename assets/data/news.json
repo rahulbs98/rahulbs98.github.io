@@ -13,12 +13,12 @@
       "source": "Rahul Satish"
     },
     {
-      "id": "talk-usi-lugano-2026-10-19",
+      "id": "talk-usi-lugano-2026-10-12",
       "title": "Towards Practical Dynamic-Committee MPC: Availability, DoS Resistance, and the Cost of Getting There",
       "summary": "USI Lugano · Lugano, Switzerland",
       "abstract": "Secure multiparty computation (MPC) lets parties compute on private inputs without revealing them. For long computations, a fixed set of servers is fragile: servers go offline, and a set known in advance is an easy denial-of-service target. Dynamic-committee models, such as Fluid MPC and YOSO MPC, pass the computation between small, changing committees, but information-theoretic protocols guaranteeing output delivery need communication growing as a high power of the committee size. After introducing the setting, this talk presents three steps towards practicality: letting committees interact for a few rounds before handover, cutting this cost; separating preprocessing and checkpointing from computation, so it resumes from the last valid state after failures; and using homomorphic secret sharing to make communication sublinear in the circuit size without fully homomorphic encryption.",
       "category": "Talk",
-      "date": "2026-10-19",
+      "date": "2026-10-12",
       "url": "https://www.usi.ch/",
       "videoUrl": "",
       "source": "Rahul Satish"

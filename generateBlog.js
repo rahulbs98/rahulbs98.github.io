@@ -3,26 +3,30 @@ const https = require('https');
 
 const OUTPUT_PATH = 'assets/data/blog.json';
 const FEEDS = {
-  personal: {
-    title: 'Long Conversations',
-    description: 'Personal writing, politics, and longer reflections.',
-    feedUrl: 'https://longconversations.substack.com/feed',
-    publicationUrl: 'https://longconversations.substack.com',
-    publishUrl: 'https://longconversations.substack.com/publish'
-  },
   original: {
     title: 'Rahul Satish',
     description: 'Technical writing and a shared space for collaborators.',
     feedUrl: 'https://rahulsatish98.substack.com/feed',
     publicationUrl: 'https://rahulsatish98.substack.com',
     publishUrl: 'https://rahulsatish98.substack.com/publish'
+  },
+  personal: {
+    title: 'Long Conversations',
+    description: 'Personal writing, politics, and longer reflections.',
+    feedUrl: 'https://longconversations.substack.com/feed',
+    publicationUrl: 'https://longconversations.substack.com',
+    publishUrl: 'https://longconversations.substack.com/publish'
   }
 };
 
 function fetchText(url) {
   return new Promise((resolve, reject) => {
-    https.get(url, { headers: { 'User-Agent': 'rahulbs98.github.io build' } }, response => {
+    const request = https.get(url, {
+      family: 4,
+      headers: { 'User-Agent': 'rahulbs98.github.io build' }
+    }, response => {
       if (response.statusCode !== 200) {
+        response.resume();
         reject(new Error(`Substack feed fetch failed: ${response.statusCode}`));
         return;
       }
@@ -31,7 +35,12 @@ function fetchText(url) {
       response.setEncoding('utf8');
       response.on('data', chunk => { body += chunk; });
       response.on('end', () => resolve(body));
-    }).on('error', reject);
+    });
+
+    request.setTimeout(15_000, () => {
+      request.destroy(new Error('Substack feed fetch timed out'));
+    });
+    request.on('error', reject);
   });
 }
 
