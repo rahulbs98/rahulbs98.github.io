@@ -116,5 +116,21 @@
       "scholarCameraReadyUrl": "https://scholar.google.com/scholar?cluster=2400824350989222929&hl=en&oi=scholarr",
       "scholarEprintUrl": ""
     }
+  },
+  {
+    "citationKey": "scholar-eras-mpc-granular-preprocessing-and-abort-recovery-with-dynamic-committees",
+    "entryType": "article",
+    "entryTags": {
+      "title": "Eras MPC: Granular Preprocessing and Abort Recovery with Dynamic Committees",
+      "author": "I Damgard, B David, R Satish",
+      "year": "2026",
+      "journal": "Cryptology ePrint Archive",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LskQKm0AAAAJ&citation_for_view=LskQKm0AAAAJ:Y0pCki6q_DkC",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LskQKm0AAAAJ&citation_for_view=LskQKm0AAAAJ:Y0pCki6q_DkC",
+      "scholarConferenceVenue": "",
+      "conferenceShortName": "",
+      "scholarCameraReadyUrl": "https://eprint.iacr.org/2026/2588",
+      "scholarEprintUrl": "https://eprint.iacr.org/2026/2588.pdf"
+    }
   }
 ]
